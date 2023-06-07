@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.HomeFragment">
+
+    <View
+        android:id="@+id/view_background_figure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="-350dp"
+        android:layout_marginEnd="-100dp"
+        android:background="@drawable/background_figure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_main_logo"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:background="@drawable/main_logo"
+        app:layout_constraintEnd_toEndOf="@+id/view_background_figure"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/view_background_figure"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_home_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/oswald_medium"
+        android:gravity="center"
+        android:text="@string/home_description"
+        android:textAllCaps="true"
+        android:textColor="@color/primary"
+        android:textSize="35sp"
+        android:lineSpacingExtra="-15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_background_figure" />
+
+    <Button
+        android:id="@+id/btn_home_play"
+        style="@style/ButtonBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/oswald_regular"
+        android:gravity="center"
+        android:text="@string/home_button_play"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:backgroundTint="@color/btn_background"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_home_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_home_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

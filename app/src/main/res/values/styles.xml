@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonBackground">
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="backgroundTint">@color/btn_background</item>
+    </style>
+    <style name="ResultBackgroundStyle">
+        <item name="android:background">@drawable/result_item_background</item>
+    </style>
+</resources>
